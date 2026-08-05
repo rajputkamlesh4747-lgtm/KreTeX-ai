@@ -40,3 +40,27 @@ a{
     border-radius:8px;
     font-weight:bold;
 }
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#00d4ff;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:16px;
+}
+
+.menu a:hover{
+    color:#00d4ff;
+}
