@@ -64,3 +64,38 @@ nav{
 .menu a:hover{
     color:#00d4ff;
 }
+
+.services{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.services h2{
+    font-size:40px;
+    color:#00d4ff;
+    margin-bottom:40px;
+}
+
+.service-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    width:280px;
+    background:#151b28;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#00d4ff;
+    margin-bottom:15px;
+}
