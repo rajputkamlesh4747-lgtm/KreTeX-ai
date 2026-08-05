@@ -9,3 +9,34 @@ body{
     background:#0b0f19;
     color:white;
 }
+
+header{
+    text-align:center;
+    padding:100px 20px;
+}
+
+h1{
+    font-size:60px;
+    color:#00d4ff;
+}
+
+p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+small{
+    color:#bbb;
+    font-size:16px;
+}
+
+a{
+    display:inline-block;
+    margin:10px;
+    padding:12px 24px;
+    background:#00d4ff;
+    color:#000;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
