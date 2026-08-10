@@ -164,3 +164,59 @@ nav{
     color:#ccc;
     line-height:1.6;
 }
+
+.pricing{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.pricing h2{
+    font-size:40px;
+    color:#00d4ff;
+    margin-bottom:40px;
+}
+
+.pricing-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.price-card{
+    width:280px;
+    padding:35px 25px;
+    background:#151b28;
+    border-radius:18px;
+    border:1px solid #252d3d;
+    transition:.3s;
+}
+
+.price-card:hover{
+    transform:translateY(-10px);
+}
+
+.price-card h3{
+    font-size:24px;
+    color:#00d4ff;
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:38px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.price-card p{
+    margin:12px 0;
+    color:#ccc;
+}
+
+.price-card a{
+    margin-top:20px;
+}
+
+.featured{
+    border:2px solid #00d4ff;
+}
