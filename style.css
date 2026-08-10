@@ -124,3 +124,43 @@ nav{
     margin-top:25px;
     color:#ffffff;
 }
+
+.portfolio{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.portfolio h2{
+    font-size:40px;
+    color:#00d4ff;
+    margin-bottom:40px;
+}
+
+.portfolio-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.project{
+    width:280px;
+    padding:30px;
+    background:#151b28;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-8px);
+}
+
+.project h3{
+    color:#00d4ff;
+    margin-bottom:15px;
+}
+
+.project p{
+    color:#ccc;
+    line-height:1.6;
+}
