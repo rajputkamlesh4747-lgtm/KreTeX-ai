@@ -99,3 +99,28 @@ nav{
     color:#00d4ff;
     margin-bottom:15px;
 }
+
+.about{
+    padding:80px 20px;
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.about h2{
+    font-size:40px;
+    color:#00d4ff;
+    margin-bottom:25px;
+}
+
+.about p{
+    color:#c8c8c8;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.about strong{
+    display:block;
+    margin-top:25px;
+    color:#ffffff;
+}
