@@ -276,3 +276,63 @@ nav{
 .featured{
     border:2px solid #00d4ff;
 }
+
+.contact{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+    color:#00d4ff;
+    margin-bottom:15px;
+}
+
+.contact > p{
+    color:#bbb;
+    margin-bottom:35px;
+}
+
+.contact form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:15px;
+    background:#151b28;
+    border:1px solid #293346;
+    border-radius:10px;
+    color:white;
+    font-size:16px;
+    outline:none;
+}
+
+.contact textarea{
+    resize:vertical;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+    border-color:#00d4ff;
+}
+
+.contact button{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#00d4ff;
+    color:#000;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.contact button:hover{
+    transform:translateY(-2px);
+}
