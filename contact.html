@@ -185,6 +185,28 @@
     </form>
 
 </main>
+<script>
+    emailjs.init({
+        publicKey: "zPNWGhk1FPV5MM7ct"
+    });
 
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm(
+            "service_p8rclr9",
+            "template_m8kqzy6",
+            this
+        )
+        .then(function() {
+            alert("Thank you! Your inquiry has been sent successfully.");
+            document.getElementById("contact-form").reset();
+        })
+        .catch(function(error) {
+            console.error("EmailJS Error:", error);
+            alert("Sorry, your message could not be sent. Please try again.");
+        });
+    });
+</script>
 </body>
-          </html>
+</html>
