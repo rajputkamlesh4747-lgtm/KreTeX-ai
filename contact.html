@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - KreTeX AI</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #080d19;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #00adef;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .menu a {
+            background: #00adef;
+            color: white;
+            text-decoration: none;
+            padding: 14px 22px;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 750px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            color: #00adef;
+            font-size: 45px;
+        }
+
+        .subtitle {
+            color: #ccc;
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+
+        form {
+            background: #151c2c;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            color: #ddd;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 14px;
+            border: 1px solid #263247;
+            border-radius: 10px;
+            background: #080d19;
+            color: white;
+            font-size: 16px;
+        }
+
+        textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background: #00adef;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">KreTeX AI</div>
+
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<main>
+
+    <h1>Contact KreTeX AI</h1>
+
+    <p class="subtitle">
+        Tell us about your project and our team will get back to you.
+    </p>
+
+    <form action="#" method="POST">
+
+        <label for="name">Full Name</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+        >
+
+        <label for="email">Email Address</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <label for="phone">Phone Number</label>
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+        >
+
+        <label for="service">Select Service</label>
+
+        <select id="service" name="service">
+            <option value="">Choose a service</option>
+            <option>AI Automation</option>
+            <option>Website Development</option>
+            <option>Mobile App Development</option>
+            <option>Digital Marketing</option>
+            <option>AI Chatbot</option>
+            <option>E-Commerce Solutions</option>
+        </select>
+
+        <label for="message">Project Details</label>
+
+        <textarea
+            id="message"
+            name="message"
+            placeholder="Tell us about your project..."
+            required
+        ></textarea>
+
+        <button type="submit">Send Inquiry</button>
+
+    </form>
+
+</main>
+
+</body>
+          </html>
