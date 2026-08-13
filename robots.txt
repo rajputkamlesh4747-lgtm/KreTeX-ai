@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rajputkamlesh4747-lgtm.github.io/KreTeX-ai/sitemap.xml
