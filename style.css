@@ -336,3 +336,59 @@ nav{
 .contact button:hover{
     transform:translateY(-2px);
 }
+/* Premium Mobile Navigation */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+        z-index: 1001;
+    }
+
+    nav .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 15px 0;
+        background: #0b1020;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        z-index: 1000;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    nav .menu.active {
+        display: flex;
+    }
+
+    nav .menu a {
+        display: block;
+        padding: 14px 20px;
+        width: 100%;
+    }
+
+    nav .menu a:hover {
+        background: rgba(255,255,255,0.08);
+    }
+    }
