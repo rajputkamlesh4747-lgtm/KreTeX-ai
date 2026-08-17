@@ -363,32 +363,38 @@ nav{
         z-index: 1001;
     }
 
-    nav .menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 15px 0;
-        background: #0b1020;
-        flex-direction: column;
-        text-align: center;
-        gap: 0;
-        z-index: 1000;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.35);
-    }
+nav .menu {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    right: 15px;
+    width: 190px;
+    padding: 10px 0;
+    background: #101827;
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    flex-direction: column;
+    z-index: 1000;
+}
 
-    nav .menu.active {
-        display: flex;
-    }
+nav .menu.active {
+    display: flex !important;
+}
 
-    nav .menu a {
-        display: block;
-        padding: 14px 20px;
-        width: 100%;
-    }
+nav .menu a {
+    display: block;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 12px 18px !important;
+    background: transparent !important;
+    color: white !important;
+    border-radius: 0 !important;
+    text-align: left;
+    font-size: 15px;
+}
 
-    nav .menu a:hover {
-        background: rgba(255,255,255,0.08);
-    }
-    }
+nav .menu a:hover {
+    background: rgba(0, 212, 255, 0.12) !important;
+    color: #00d4ff !important;
+}
