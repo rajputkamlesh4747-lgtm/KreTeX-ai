@@ -453,3 +453,42 @@ nav .menu a:hover {
         pointer-events: auto;
     }
 }
+
+@media (max-width: 768px) {
+    header {
+        padding: 55px 20px 30px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 48px;
+        line-height: 1.1;
+        margin-bottom: 18px;
+    }
+
+    header p {
+        font-size: 19px;
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+
+    header small {
+        font-size: 15px;
+    }
+
+    header a {
+        display: inline-block;
+        margin: 18px 6px 0;
+    }
+
+    .hero-image {
+        margin-top: 25px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 18px;
+    }
+}
