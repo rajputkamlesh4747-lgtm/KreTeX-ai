@@ -438,3 +438,18 @@ nav .menu a:hover {
         display: flex;
     }
 }
+
+@media (max-width: 768px) {
+    nav .menu {
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.25s ease, transform 0.25s ease;
+        pointer-events: none;
+    }
+
+    nav .menu.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+}
