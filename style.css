@@ -1310,3 +1310,681 @@ nav .menu a:hover {
         padding: 25px 22px;
     }
 }
+
+/* =========================================
+   KreTeX AI - Premium About Section
+========================================= */
+
+.about {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 70px;
+    padding: 110px 7%;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 80% 50%, rgba(124, 77, 255, 0.09), transparent 35%),
+        #050914;
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.about-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #00d4ff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-content h2 {
+    margin: 0 0 25px;
+    color: #ffffff;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.08;
+}
+
+.about-content h2 span {
+    display: block;
+    background: linear-gradient(90deg, #00d4ff, #7c4dff, #d946ef);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.about-content p {
+    max-width: 600px;
+    margin: 0 0 18px;
+    color: #929db4;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-founder {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 32px;
+    padding: 15px 18px;
+    width: fit-content;
+    border: 1px solid rgba(0, 212, 255, 0.18);
+    border-radius: 14px;
+    background: rgba(10, 20, 38, 0.7);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.founder-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: #001018;
+    background: linear-gradient(135deg, #00d4ff, #7c4dff);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.about-founder div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.about-founder strong {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.about-founder small {
+    color: #74829c;
+    font-size: 12px;
+}
+
+/* Animated visual */
+
+.about-visual {
+    position: relative;
+    width: 440px;
+    height: 440px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-glow {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: #7c4dff;
+    opacity: 0.12;
+    filter: blur(75px);
+    animation: aboutGlow 4s ease-in-out infinite alternate;
+}
+
+.about-orbit {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 212, 255, 0.25);
+}
+
+.orbit-a {
+    width: 280px;
+    height: 280px;
+    animation: aboutRotate 12s linear infinite;
+}
+
+.orbit-b {
+    width: 380px;
+    height: 180px;
+    border-color: rgba(124, 77, 255, 0.3);
+    transform: rotate(45deg);
+    animation: aboutRotateReverse 15s linear infinite;
+}
+
+.about-core {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: radial-gradient(circle, #172d50, #080e1b 70%);
+    border: 2px solid rgba(0, 212, 255, 0.7);
+    box-shadow:
+        0 0 30px rgba(0, 212, 255, 0.55),
+        0 0 70px rgba(124, 77, 255, 0.2);
+    z-index: 5;
+    animation: aboutCorePulse 3s ease-in-out infinite;
+}
+
+.about-core span {
+    color: #00d4ff;
+    font-size: 45px;
+    text-shadow: 0 0 25px #00d4ff;
+}
+
+.about-core small {
+    color: #a9b5ca;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+/* Floating mini cards */
+
+.about-mini-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 14px;
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    border-radius: 12px;
+    background: rgba(8, 16, 30, 0.88);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    z-index: 8;
+    animation: miniFloat 4s ease-in-out infinite;
+}
+
+.about-mini-card strong {
+    color: #00d4ff;
+    font-size: 16px;
+}
+
+.about-mini-card span {
+    color: #9ba6bb;
+    font-size: 11px;
+}
+
+.mini-one {
+    top: 45px;
+    right: 20px;
+}
+
+.mini-two {
+    bottom: 55px;
+    left: 10px;
+    border-color: rgba(124, 77, 255, 0.35);
+    animation-delay: 1s;
+}
+
+.mini-two strong {
+    color: #b47cff;
+}
+
+.mini-three {
+    bottom: 15px;
+    right: 55px;
+    border-color: rgba(217, 70, 239, 0.3);
+    animation-delay: 2s;
+}
+
+.mini-three strong {
+    color: #e879f9;
+}
+
+@keyframes aboutGlow {
+    from {
+        transform: scale(0.9);
+        opacity: 0.08;
+    }
+    to {
+        transform: scale(1.15);
+        opacity: 0.16;
+    }
+}
+
+@keyframes aboutRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes aboutRotateReverse {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(-315deg);
+    }
+}
+
+@keyframes aboutCorePulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.06);
+    }
+}
+
+@keyframes miniFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 55px;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-content p {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+    }
+
+    .about-founder {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .about-visual {
+        width: 340px;
+        height: 340px;
+    }
+
+    .about-core {
+        width: 95px;
+        height: 95px;
+    }
+
+    .about-core span {
+        font-size: 34px;
+    }
+
+    .orbit-a {
+        width: 220px;
+        height: 220px;
+    }
+
+    .orbit-b {
+        width: 300px;
+        height: 140px;
+    }
+
+    .mini-one {
+        top: 25px;
+        right: 0;
+    }
+
+    .mini-two {
+        bottom: 35px;
+        left: 0;
+    }
+
+    .mini-three {
+        bottom: 0;
+        right: 25px;
+    }
+}
+
+/* =========================================
+   KreTeX AI - Premium About Section
+========================================= */
+
+.about {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 70px;
+    padding: 110px 7%;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 80% 50%, rgba(124, 77, 255, 0.09), transparent 35%),
+        #050914;
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.about-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #00d4ff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-content h2 {
+    margin: 0 0 25px;
+    color: #ffffff;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.08;
+}
+
+.about-content h2 span {
+    display: block;
+    background: linear-gradient(90deg, #00d4ff, #7c4dff, #d946ef);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.about-content p {
+    max-width: 600px;
+    margin: 0 0 18px;
+    color: #929db4;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-founder {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 32px;
+    padding: 15px 18px;
+    width: fit-content;
+    border: 1px solid rgba(0, 212, 255, 0.18);
+    border-radius: 14px;
+    background: rgba(10, 20, 38, 0.7);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.founder-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: #001018;
+    background: linear-gradient(135deg, #00d4ff, #7c4dff);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.about-founder div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.about-founder strong {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.about-founder small {
+    color: #74829c;
+    font-size: 12px;
+}
+
+/* Animated visual */
+
+.about-visual {
+    position: relative;
+    width: 440px;
+    height: 440px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-glow {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: #7c4dff;
+    opacity: 0.12;
+    filter: blur(75px);
+    animation: aboutGlow 4s ease-in-out infinite alternate;
+}
+
+.about-orbit {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 212, 255, 0.25);
+}
+
+.orbit-a {
+    width: 280px;
+    height: 280px;
+    animation: aboutRotate 12s linear infinite;
+}
+
+.orbit-b {
+    width: 380px;
+    height: 180px;
+    border-color: rgba(124, 77, 255, 0.3);
+    transform: rotate(45deg);
+    animation: aboutRotateReverse 15s linear infinite;
+}
+
+.about-core {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: radial-gradient(circle, #172d50, #080e1b 70%);
+    border: 2px solid rgba(0, 212, 255, 0.7);
+    box-shadow:
+        0 0 30px rgba(0, 212, 255, 0.55),
+        0 0 70px rgba(124, 77, 255, 0.2);
+    z-index: 5;
+    animation: aboutCorePulse 3s ease-in-out infinite;
+}
+
+.about-core span {
+    color: #00d4ff;
+    font-size: 45px;
+    text-shadow: 0 0 25px #00d4ff;
+}
+
+.about-core small {
+    color: #a9b5ca;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+/* Floating mini cards */
+
+.about-mini-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 14px;
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    border-radius: 12px;
+    background: rgba(8, 16, 30, 0.88);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    z-index: 8;
+    animation: miniFloat 4s ease-in-out infinite;
+}
+
+.about-mini-card strong {
+    color: #00d4ff;
+    font-size: 16px;
+}
+
+.about-mini-card span {
+    color: #9ba6bb;
+    font-size: 11px;
+}
+
+.mini-one {
+    top: 45px;
+    right: 20px;
+}
+
+.mini-two {
+    bottom: 55px;
+    left: 10px;
+    border-color: rgba(124, 77, 255, 0.35);
+    animation-delay: 1s;
+}
+
+.mini-two strong {
+    color: #b47cff;
+}
+
+.mini-three {
+    bottom: 15px;
+    right: 55px;
+    border-color: rgba(217, 70, 239, 0.3);
+    animation-delay: 2s;
+}
+
+.mini-three strong {
+    color: #e879f9;
+}
+
+@keyframes aboutGlow {
+    from {
+        transform: scale(0.9);
+        opacity: 0.08;
+    }
+    to {
+        transform: scale(1.15);
+        opacity: 0.16;
+    }
+}
+
+@keyframes aboutRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes aboutRotateReverse {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(-315deg);
+    }
+}
+
+@keyframes aboutCorePulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.06);
+    }
+}
+
+@keyframes miniFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 55px;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-content p {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+    }
+
+    .about-founder {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .about-visual {
+        width: 340px;
+        height: 340px;
+    }
+
+    .about-core {
+        width: 95px;
+        height: 95px;
+    }
+
+    .about-core span {
+        font-size: 34px;
+    }
+
+    .orbit-a {
+        width: 220px;
+        height: 220px;
+    }
+
+    .orbit-b {
+        width: 300px;
+        height: 140px;
+    }
+
+    .mini-one {
+        top: 25px;
+        right: 0;
+    }
+
+    .mini-two {
+        bottom: 35px;
+        left: 0;
+    }
+
+    .mini-three {
+        bottom: 0;
+        right: 25px;
+    }
+}
