@@ -1150,3 +1150,163 @@ nav .menu a:hover {
         bottom: 105px;
     }
 }
+
+/* =========================================
+   KreTeX AI - Premium Features
+========================================= */
+
+.features-section {
+    position: relative;
+    padding: 100px 6%;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% 30%, rgba(0, 212, 255, 0.08), transparent 30%),
+        radial-gradient(circle at 85% 70%, rgba(124, 77, 255, 0.08), transparent 30%),
+        #070b15;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-heading span {
+    color: #00d4ff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    margin: 12px 0 15px;
+    color: #ffffff;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.1;
+}
+
+.section-heading h2 strong {
+    background: linear-gradient(90deg, #00d4ff, #7c4dff, #d946ef);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.section-heading p {
+    margin: 0;
+    color: #8995ad;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.features-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.feature-card {
+    position: relative;
+    padding: 32px 28px;
+    min-height: 210px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 212, 255, 0.14);
+    border-radius: 20px;
+    background: linear-gradient(
+        145deg,
+        rgba(15, 25, 45, 0.95),
+        rgba(7, 13, 27, 0.95)
+    );
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.22);
+    transition: transform 0.35s ease, border-color 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.feature-card::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: -60px;
+    right: -60px;
+    border-radius: 50%;
+    background: #00d4ff;
+    opacity: 0.08;
+    filter: blur(25px);
+    transition: 0.35s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-9px);
+    border-color: rgba(0, 212, 255, 0.45);
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35),
+        0 0 30px rgba(0, 212, 255, 0.08);
+}
+
+.feature-card:hover::before {
+    transform: scale(1.6);
+    opacity: 0.15;
+}
+
+.feature-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border-radius: 14px;
+    background: rgba(0, 212, 255, 0.08);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    font-size: 25px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.08);
+}
+
+.feature-card h3 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.feature-card p {
+    margin: 0;
+    color: #8d99b0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .features-section {
+        padding: 75px 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 38px;
+    }
+
+    .section-heading p {
+        font-size: 15px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .feature-card {
+        min-height: auto;
+        padding: 25px 22px;
+    }
+}
