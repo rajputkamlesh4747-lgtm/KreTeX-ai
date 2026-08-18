@@ -784,3 +784,12 @@ nav .menu a:hover {
         padding: 10px 12px;
     }
 }
+
+.hero-visual img {
+    width: 100%;
+    max-height: 520px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    display: block;
+}
