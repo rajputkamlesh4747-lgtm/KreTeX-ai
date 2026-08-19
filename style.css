@@ -971,3 +971,123 @@ body {
         min-width: 130px;
     }
 }
+
+/* ===== FINAL MOBILE POLISH ===== */
+
+@media (max-width: 700px) {
+
+    .hero {
+        padding-top: 32px;
+        padding-bottom: 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.08;
+        margin-bottom: 16px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+        line-height: 1.55;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 14px 20px;
+    }
+
+    .hero-visual {
+        min-height: 380px;
+        height: 380px;
+        margin-top: 0;
+    }
+
+    .ai-orb {
+        width: 255px;
+        height: 255px;
+    }
+
+    .ai-chip {
+        width: 110px;
+        height: 110px;
+    }
+
+    .ai-chip span {
+        font-size: 45px;
+    }
+
+    .ring-one,
+    .ring-two {
+        width: 290px;
+        height: 105px;
+    }
+
+    .floating-card {
+        min-width: 135px;
+        padding: 10px;
+    }
+
+    .floating-card b {
+        font-size: 10px;
+    }
+
+    .floating-card small {
+        font-size: 8px;
+    }
+
+    .card-automation {
+        top: 5%;
+        left: 0;
+    }
+
+    .card-web {
+        top: 17%;
+        right: 0;
+    }
+
+    .card-app {
+        bottom: 9%;
+        left: 0;
+    }
+
+    .card-chat {
+        bottom: 20%;
+        right: 0;
+    }
+
+    .service-strip {
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+
+    .service-item {
+        padding: 20px 15px;
+    }
+
+    .service-icon {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .service-item h3 {
+        margin-bottom: 7px;
+    }
+
+    .service-item p {
+        font-size: 13px;
+    }
+
+    .stats {
+        margin-bottom: 45px;
+    }
+
+    .trusted {
+        padding-bottom: 50px;
+    }
+}
