@@ -214,31 +214,29 @@ body{
 /* =========================================
    BUTTONS
    ========================================= */
-
 .hero-buttons{
-    display:flex;
-    gap:15px;
+    width:100%;
+    max-width:340px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
 }
 
 .btn{
-    min-width:170px;
+    min-width:0;
+    width:100%;
 
-    padding:15px 22px;
+    padding:13px 8px;
 
     border-radius:8px;
 
-    text-decoration:none;
-    text-align:center;
-
-    font-size:15px;
-    font-weight:700;
-
-    transition:.3s ease;
+    font-size:12px;
 }
 
 .btn span{
-    margin-left:13px;
-    font-size:19px;
+    margin-left:5px;
+    font-size:15px;
 }
 
 .btn-primary{
