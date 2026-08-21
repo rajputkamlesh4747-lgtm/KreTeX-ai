@@ -1022,7 +1022,7 @@ body {
 
         padding: 20px 8px;
 
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
 
         border-radius: 15px;
     }
