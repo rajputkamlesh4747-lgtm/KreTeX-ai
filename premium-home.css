@@ -1621,3 +1621,788 @@ footer{
     bottom: 70px !important;
   }
 }
+
+/* =====================================================
+   KRETEX AI — NEW HERO ARTWORK
+   ===================================================== */
+
+.reference-hero-art{
+    position:relative;
+    width:100%;
+    height:610px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:visible;
+}
+
+/* Blue atmospheric glow */
+.ref-glow{
+    position:absolute;
+    width:430px;
+    height:430px;
+    border-radius:50%;
+    background:
+        radial-gradient(circle,
+        rgba(0,217,255,.30) 0%,
+        rgba(0,120,255,.15) 35%,
+        rgba(80,40,255,.08) 58%,
+        transparent 72%);
+    filter:blur(8px);
+}
+
+/* Orbit rings */
+.ref-orbit{
+    position:absolute;
+    width:430px;
+    height:250px;
+    border:1px solid rgba(0,217,255,.20);
+    border-radius:50%;
+    transform:rotate(-18deg);
+}
+
+.orbit-1{
+    box-shadow:0 0 35px rgba(0,180,255,.08);
+}
+
+.orbit-2{
+    width:500px;
+    height:300px;
+    border-color:rgba(155,77,255,.16);
+    transform:rotate(25deg);
+}
+
+
+/* =====================================================
+   CENTRAL AI PLATFORM
+   ===================================================== */
+
+.ref-ai-platform{
+    position:relative;
+    width:300px;
+    height:300px;
+    border-radius:48px;
+    transform:rotate(-8deg);
+    background:
+        linear-gradient(145deg,
+        rgba(11,34,70,.95),
+        rgba(8,18,45,.98));
+    border:2px solid rgba(0,217,255,.72);
+    box-shadow:
+        0 0 35px rgba(0,217,255,.35),
+        0 0 90px rgba(0,100,255,.18),
+        inset 0 0 40px rgba(0,217,255,.08);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:5;
+}
+
+.ref-ai-platform::before{
+    content:"";
+    position:absolute;
+    inset:22px;
+    border-radius:35px;
+    border:1px solid rgba(155,77,255,.65);
+}
+
+.ref-ai-platform::after{
+    content:"";
+    position:absolute;
+    inset:-22px;
+    border-radius:58px;
+    border:1px solid rgba(0,217,255,.18);
+    box-shadow:0 0 35px rgba(0,217,255,.12);
+}
+
+
+/* AI CHIP */
+
+.ref-ai-chip{
+    position:relative;
+    width:145px;
+    height:145px;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:
+        linear-gradient(145deg,
+        #102b58,
+        #07142e);
+    border:2px solid rgba(0,217,255,.8);
+    box-shadow:
+        0 0 30px rgba(0,217,255,.45),
+        inset 0 0 25px rgba(0,217,255,.10);
+    z-index:2;
+}
+
+.ref-ai-chip span{
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:64px;
+    font-weight:900;
+    font-style:italic;
+    color:#00d9ff;
+    text-shadow:
+        0 0 15px rgba(0,217,255,.9),
+        0 0 35px rgba(0,217,255,.45);
+}
+
+
+/* Platform lines */
+
+.ref-platform-line{
+    position:absolute;
+    height:2px;
+    border-radius:50%;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(0,217,255,.65),
+        transparent
+    );
+    opacity:.65;
+}
+
+.line-1{
+    width:210px;
+    bottom:42px;
+}
+
+.line-2{
+    width:170px;
+    bottom:30px;
+    opacity:.4;
+}
+
+.line-3{
+    width:125px;
+    bottom:20px;
+    opacity:.25;
+}
+
+
+/* =====================================================
+   FLOATING CARDS
+   ===================================================== */
+
+.ref-card{
+    position:absolute;
+    min-width:190px;
+    padding:16px 18px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    border-radius:16px;
+    background:
+        linear-gradient(
+        135deg,
+        rgba(9,31,64,.94),
+        rgba(7,17,39,.92)
+        );
+    border:1px solid rgba(0,217,255,.48);
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.35),
+        0 0 20px rgba(0,150,255,.10);
+    backdrop-filter:blur(12px);
+    z-index:8;
+}
+
+.ref-card strong{
+    display:block;
+    color:#fff;
+    font-size:15px;
+    margin-bottom:5px;
+}
+
+.ref-card span{
+    display:block;
+    color:#8fa4c4;
+    font-size:11px;
+}
+
+.ref-icon{
+    width:43px;
+    height:43px;
+    flex:0 0 43px;
+    border-radius:12px;
+    display:grid;
+    place-items:center;
+    color:#00d9ff;
+    font-size:21px;
+    font-weight:700;
+    background:rgba(0,150,255,.12);
+    box-shadow:inset 0 0 15px rgba(0,217,255,.08);
+}
+
+
+/* Card positions */
+
+.ref-automation{
+    top:100px;
+    left:0;
+    transform:rotate(5deg);
+}
+
+.ref-web{
+    top:155px;
+    right:-5px;
+    transform:rotate(4deg);
+}
+
+.ref-app{
+    bottom:65px;
+    left:10px;
+    transform:rotate(-4deg);
+}
+
+.ref-chat{
+    bottom:85px;
+    right:-5px;
+    transform:rotate(-4deg);
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media(max-width:700px){
+
+    .reference-hero-art{
+        height:510px;
+        width:100%;
+        margin-top:10px;
+    }
+
+    .ref-glow{
+        width:360px;
+        height:360px;
+    }
+
+    .ref-orbit{
+        width:360px;
+        height:215px;
+    }
+
+    .orbit-2{
+        width:410px;
+        height:250px;
+    }
+
+    .ref-ai-platform{
+        width:245px;
+        height:245px;
+        border-radius:40px;
+    }
+
+    .ref-ai-chip{
+        width:120px;
+        height:120px;
+        border-radius:27px;
+    }
+
+    .ref-ai-chip span{
+        font-size:54px;
+    }
+
+    .ref-card{
+        min-width:150px;
+        max-width:175px;
+        padding:11px 12px;
+        gap:8px;
+        border-radius:13px;
+    }
+
+    .ref-card strong{
+        font-size:12px;
+    }
+
+    .ref-card span{
+        font-size:9px;
+    }
+
+    .ref-icon{
+        width:36px;
+        height:36px;
+        flex-basis:36px;
+        font-size:17px;
+        border-radius:10px;
+    }
+
+    .ref-automation{
+        top:35px;
+        left:-8px;
+    }
+
+    .ref-web{
+        top:85px;
+        right:-8px;
+    }
+
+    .ref-app{
+        bottom:28px;
+        left:-5px;
+    }
+
+    .ref-chat{
+        bottom:48px;
+        right:-8px;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+   ===================================================== */
+
+@media(max-width:390px){
+
+    .reference-hero-art{
+        height:450px;
+    }
+
+    .ref-ai-platform{
+        width:215px;
+        height:215px;
+    }
+
+    .ref-ai-chip{
+        width:105px;
+        height:105px;
+    }
+
+    .ref-ai-chip span{
+        font-size:48px;
+    }
+
+    .ref-card{
+        min-width:135px;
+        max-width:150px;
+        padding:9px;
+    }
+
+    .ref-card strong{
+        font-size:10px;
+    }
+
+    .ref-card span{
+        font-size:8px;
+    }
+
+    .ref-icon{
+        width:31px;
+        height:31px;
+        flex-basis:31px;
+        font-size:14px;
+    }
+
+    .ref-automation{
+        left:-15px;
+    }
+
+    .ref-web{
+        right:-15px;
+    }
+
+    .ref-app{
+        left:-12px;
+    }
+
+    .ref-chat{
+        right:-15px;
+    }
+   
+}
+
+/* =====================================================
+   KRETEX AI — NEW HERO ARTWORK
+   ===================================================== */
+
+.reference-hero-art{
+    position:relative;
+    width:100%;
+    height:610px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:visible;
+}
+
+/* Blue atmospheric glow */
+.ref-glow{
+    position:absolute;
+    width:430px;
+    height:430px;
+    border-radius:50%;
+    background:
+        radial-gradient(circle,
+        rgba(0,217,255,.30) 0%,
+        rgba(0,120,255,.15) 35%,
+        rgba(80,40,255,.08) 58%,
+        transparent 72%);
+    filter:blur(8px);
+}
+
+/* Orbit rings */
+.ref-orbit{
+    position:absolute;
+    width:430px;
+    height:250px;
+    border:1px solid rgba(0,217,255,.20);
+    border-radius:50%;
+    transform:rotate(-18deg);
+}
+
+.orbit-1{
+    box-shadow:0 0 35px rgba(0,180,255,.08);
+}
+
+.orbit-2{
+    width:500px;
+    height:300px;
+    border-color:rgba(155,77,255,.16);
+    transform:rotate(25deg);
+}
+
+
+/* =====================================================
+   CENTRAL AI PLATFORM
+   ===================================================== */
+
+.ref-ai-platform{
+    position:relative;
+    width:300px;
+    height:300px;
+    border-radius:48px;
+    transform:rotate(-8deg);
+    background:
+        linear-gradient(145deg,
+        rgba(11,34,70,.95),
+        rgba(8,18,45,.98));
+    border:2px solid rgba(0,217,255,.72);
+    box-shadow:
+        0 0 35px rgba(0,217,255,.35),
+        0 0 90px rgba(0,100,255,.18),
+        inset 0 0 40px rgba(0,217,255,.08);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:5;
+}
+
+.ref-ai-platform::before{
+    content:"";
+    position:absolute;
+    inset:22px;
+    border-radius:35px;
+    border:1px solid rgba(155,77,255,.65);
+}
+
+.ref-ai-platform::after{
+    content:"";
+    position:absolute;
+    inset:-22px;
+    border-radius:58px;
+    border:1px solid rgba(0,217,255,.18);
+    box-shadow:0 0 35px rgba(0,217,255,.12);
+}
+
+
+/* AI CHIP */
+
+.ref-ai-chip{
+    position:relative;
+    width:145px;
+    height:145px;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:
+        linear-gradient(145deg,
+        #102b58,
+        #07142e);
+    border:2px solid rgba(0,217,255,.8);
+    box-shadow:
+        0 0 30px rgba(0,217,255,.45),
+        inset 0 0 25px rgba(0,217,255,.10);
+    z-index:2;
+}
+
+.ref-ai-chip span{
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:64px;
+    font-weight:900;
+    font-style:italic;
+    color:#00d9ff;
+    text-shadow:
+        0 0 15px rgba(0,217,255,.9),
+        0 0 35px rgba(0,217,255,.45);
+}
+
+
+/* Platform lines */
+
+.ref-platform-line{
+    position:absolute;
+    height:2px;
+    border-radius:50%;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(0,217,255,.65),
+        transparent
+    );
+    opacity:.65;
+}
+
+.line-1{
+    width:210px;
+    bottom:42px;
+}
+
+.line-2{
+    width:170px;
+    bottom:30px;
+    opacity:.4;
+}
+
+.line-3{
+    width:125px;
+    bottom:20px;
+    opacity:.25;
+}
+
+
+/* =====================================================
+   FLOATING CARDS
+   ===================================================== */
+
+.ref-card{
+    position:absolute;
+    min-width:190px;
+    padding:16px 18px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    border-radius:16px;
+    background:
+        linear-gradient(
+        135deg,
+        rgba(9,31,64,.94),
+        rgba(7,17,39,.92)
+        );
+    border:1px solid rgba(0,217,255,.48);
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.35),
+        0 0 20px rgba(0,150,255,.10);
+    backdrop-filter:blur(12px);
+    z-index:8;
+}
+
+.ref-card strong{
+    display:block;
+    color:#fff;
+    font-size:15px;
+    margin-bottom:5px;
+}
+
+.ref-card span{
+    display:block;
+    color:#8fa4c4;
+    font-size:11px;
+}
+
+.ref-icon{
+    width:43px;
+    height:43px;
+    flex:0 0 43px;
+    border-radius:12px;
+    display:grid;
+    place-items:center;
+    color:#00d9ff;
+    font-size:21px;
+    font-weight:700;
+    background:rgba(0,150,255,.12);
+    box-shadow:inset 0 0 15px rgba(0,217,255,.08);
+}
+
+
+/* Card positions */
+
+.ref-automation{
+    top:100px;
+    left:0;
+    transform:rotate(5deg);
+}
+
+.ref-web{
+    top:155px;
+    right:-5px;
+    transform:rotate(4deg);
+}
+
+.ref-app{
+    bottom:65px;
+    left:10px;
+    transform:rotate(-4deg);
+}
+
+.ref-chat{
+    bottom:85px;
+    right:-5px;
+    transform:rotate(-4deg);
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media(max-width:700px){
+
+    .reference-hero-art{
+        height:510px;
+        width:100%;
+        margin-top:10px;
+    }
+
+    .ref-glow{
+        width:360px;
+        height:360px;
+    }
+
+    .ref-orbit{
+        width:360px;
+        height:215px;
+    }
+
+    .orbit-2{
+        width:410px;
+        height:250px;
+    }
+
+    .ref-ai-platform{
+        width:245px;
+        height:245px;
+        border-radius:40px;
+    }
+
+    .ref-ai-chip{
+        width:120px;
+        height:120px;
+        border-radius:27px;
+    }
+
+    .ref-ai-chip span{
+        font-size:54px;
+    }
+
+    .ref-card{
+        min-width:150px;
+        max-width:175px;
+        padding:11px 12px;
+        gap:8px;
+        border-radius:13px;
+    }
+
+    .ref-card strong{
+        font-size:12px;
+    }
+
+    .ref-card span{
+        font-size:9px;
+    }
+
+    .ref-icon{
+        width:36px;
+        height:36px;
+        flex-basis:36px;
+        font-size:17px;
+        border-radius:10px;
+    }
+
+    .ref-automation{
+        top:35px;
+        left:-8px;
+    }
+
+    .ref-web{
+        top:85px;
+        right:-8px;
+    }
+
+    .ref-app{
+        bottom:28px;
+        left:-5px;
+    }
+
+    .ref-chat{
+        bottom:48px;
+        right:-8px;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+   ===================================================== */
+
+@media(max-width:390px){
+
+    .reference-hero-art{
+        height:450px;
+    }
+
+    .ref-ai-platform{
+        width:215px;
+        height:215px;
+    }
+
+    .ref-ai-chip{
+        width:105px;
+        height:105px;
+    }
+
+    .ref-ai-chip span{
+        font-size:48px;
+    }
+
+    .ref-card{
+        min-width:135px;
+        max-width:150px;
+        padding:9px;
+    }
+
+    .ref-card strong{
+        font-size:10px;
+    }
+
+    .ref-card span{
+        font-size:8px;
+    }
+
+    .ref-icon{
+        width:31px;
+        height:31px;
+        flex-basis:31px;
+        font-size:14px;
+    }
+
+    .ref-automation{
+        left:-15px;
+    }
+
+    .ref-web{
+        right:-15px;
+    }
+
+    .ref-app{
+        left:-12px;
+    }
+
+    .ref-chat{
+        right:-15px;
+    }
+}
