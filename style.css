@@ -2304,3 +2304,347 @@ select {
         display: none;
     }
 }
+
+/* =========================================
+   KRETEX AI — PREMIUM SERVICES SECTION
+   ========================================= */
+
+#services {
+  position: relative;
+  padding: 90px 5% 100px;
+  overflow: hidden;
+}
+
+#services::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(0, 220, 255, 0.12),
+    rgba(120, 50, 255, 0.07),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+#services .section-title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+#services .section-title h2 {
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 0 0 16px;
+  color: #ffffff;
+}
+
+#services .section-title p {
+  max-width: 650px;
+  margin: auto;
+  color: #9ca9c5;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+#services .services-grid,
+#services .service-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1250px;
+  margin: auto;
+}
+
+#services .service-card,
+#services .service-box {
+  position: relative;
+  padding: 32px 25px;
+  min-height: 230px;
+  border: 1px solid rgba(0, 210, 255, 0.16);
+  border-radius: 24px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(12, 25, 52, 0.92),
+      rgba(8, 12, 30, 0.88)
+    );
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.04),
+    0 20px 60px rgba(0,0,0,0.25);
+  overflow: hidden;
+  transition: 0.35s ease;
+}
+
+#services .service-card::before,
+#services .service-box::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: -80px;
+  right: -70px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 220, 255, 0.18),
+    transparent 70%
+  );
+}
+
+#services .service-card:hover,
+#services .service-box:hover {
+  transform: translateY(-10px);
+  border-color: rgba(0, 220, 255, 0.55);
+  box-shadow:
+    0 20px 70px rgba(0, 190, 255, 0.14),
+    inset 0 1px 0 rgba(255,255,255,0.07);
+}
+
+#services .service-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  border-radius: 17px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 220, 255, 0.18),
+    rgba(130, 60, 255, 0.18)
+  );
+  border: 1px solid rgba(0, 220, 255, 0.25);
+  color: #00d9ff;
+  font-size: 25px;
+}
+
+#services .service-card h3,
+#services .service-box h3 {
+  color: #ffffff;
+  font-size: 21px;
+  margin: 0 0 12px;
+}
+
+#services .service-card p,
+#services .service-box p {
+  color: #8f9db8;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  #services .services-grid,
+  #services .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #services {
+    padding: 65px 18px 75px;
+  }
+
+  #services .section-title {
+    margin-bottom: 35px;
+  }
+
+  #services .section-title h2 {
+    font-size: 34px;
+  }
+
+  #services .section-title p {
+    font-size: 14px;
+  }
+
+  #services .services-grid,
+  #services .service-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  #services .service-card,
+  #services .service-box {
+    min-height: auto;
+    padding: 25px 22px;
+  }
+   }/* =========================================
+   KRETEX AI — PREMIUM SERVICES SECTION
+   ========================================= */
+
+#services {
+  position: relative;
+  padding: 90px 5% 100px;
+  overflow: hidden;
+}
+
+#services::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(0, 220, 255, 0.12),
+    rgba(120, 50, 255, 0.07),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+#services .section-title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+#services .section-title h2 {
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 0 0 16px;
+  color: #ffffff;
+}
+
+#services .section-title p {
+  max-width: 650px;
+  margin: auto;
+  color: #9ca9c5;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+#services .services-grid,
+#services .service-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1250px;
+  margin: auto;
+}
+
+#services .service-card,
+#services .service-box {
+  position: relative;
+  padding: 32px 25px;
+  min-height: 230px;
+  border: 1px solid rgba(0, 210, 255, 0.16);
+  border-radius: 24px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(12, 25, 52, 0.92),
+      rgba(8, 12, 30, 0.88)
+    );
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.04),
+    0 20px 60px rgba(0,0,0,0.25);
+  overflow: hidden;
+  transition: 0.35s ease;
+}
+
+#services .service-card::before,
+#services .service-box::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: -80px;
+  right: -70px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 220, 255, 0.18),
+    transparent 70%
+  );
+}
+
+#services .service-card:hover,
+#services .service-box:hover {
+  transform: translateY(-10px);
+  border-color: rgba(0, 220, 255, 0.55);
+  box-shadow:
+    0 20px 70px rgba(0, 190, 255, 0.14),
+    inset 0 1px 0 rgba(255,255,255,0.07);
+}
+
+#services .service-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  border-radius: 17px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 220, 255, 0.18),
+    rgba(130, 60, 255, 0.18)
+  );
+  border: 1px solid rgba(0, 220, 255, 0.25);
+  color: #00d9ff;
+  font-size: 25px;
+}
+
+#services .service-card h3,
+#services .service-box h3 {
+  color: #ffffff;
+  font-size: 21px;
+  margin: 0 0 12px;
+}
+
+#services .service-card p,
+#services .service-box p {
+  color: #8f9db8;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  #services .services-grid,
+  #services .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #services {
+    padding: 65px 18px 75px;
+  }
+
+  #services .section-title {
+    margin-bottom: 35px;
+  }
+
+  #services .section-title h2 {
+    font-size: 34px;
+  }
+
+  #services .section-title p {
+    font-size: 14px;
+  }
+
+  #services .services-grid,
+  #services .service-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  #services .service-card,
+  #services .service-box {
+    min-height: auto;
+    padding: 25px 22px;
+  }
+}
