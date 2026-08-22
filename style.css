@@ -2648,3 +2648,128 @@ select {
     padding: 25px 22px;
   }
 }
+
+/* =========================================
+   KRETEX AI — PREMIUM STATS SECTION
+   ========================================= */
+
+.stats-section {
+    width: min(1250px, 92%);
+    margin: 20px auto 0;
+    padding: 0;
+}
+
+.stats-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+    border: 1px solid rgba(0, 220, 255, .14);
+    border-radius: 24px;
+    background:
+        linear-gradient(
+            115deg,
+            rgba(8, 20, 44, .94),
+            rgba(16, 10, 43, .90)
+        );
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.28),
+        inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+.stats-container::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 220px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(0, 217, 255, .08),
+            transparent 70%
+        );
+    pointer-events: none;
+}
+
+.stat {
+    position: relative;
+    padding: 32px 20px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,.07);
+    z-index: 1;
+}
+
+.stat:last-child {
+    border-right: 0;
+}
+
+.stat strong {
+    display: block;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #00e5ff,
+            #5d8cff,
+            #a052ff
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.stat span {
+    display: block;
+    margin-top: 8px;
+    color: #8793ad;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .3px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .stats-section {
+        width: calc(100% - 20px);
+        margin-top: 10px;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 18px;
+    }
+
+    .stat {
+        padding: 24px 8px;
+    }
+
+    .stat:nth-child(1),
+    .stat:nth-child(2) {
+        border-bottom:
+            1px solid rgba(255,255,255,.07);
+    }
+
+    .stat:nth-child(2),
+    .stat:nth-child(4) {
+        border-right: 0;
+    }
+
+    .stat strong {
+        font-size: 29px;
+    }
+
+    .stat span {
+        font-size: 9px;
+    }
+}
