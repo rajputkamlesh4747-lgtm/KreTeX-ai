@@ -1968,40 +1968,90 @@ button, input, textarea, select {
     }
 }
 
-/* KRETEX AI HEADER LOGO */
+/* =========================================
+   KRETEX AI — NATURAL HEADER BRAND
+   ========================================= */
 
-.brand {
+.brand-logo-text {
     display: flex;
     align-items: center;
+    gap: 10px;
     text-decoration: none;
 }
 
-.brand-logo {
-    width: 190px;
-    height: 70px;
-    object-fit: contain;
-    display: block;
+.kr-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 12px;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: -1px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            145deg,
+            #182b58,
+            #111832
+        );
+
+    border: 1px solid rgba(0, 220, 255, .30);
+
+    box-shadow:
+        0 0 20px rgba(0, 210, 255, .10),
+        inset 0 1px 0 rgba(255,255,255,.08);
 }
 
-/* Mobile */
+.brand-name {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.brand-name b {
+    font-weight: 800;
+
+    background:
+        linear-gradient(
+            90deg,
+            #00e5ff,
+            #668cff,
+            #a45cff
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* MOBILE */
+
 @media (max-width: 600px) {
-    .brand-logo {
-        width: 165px;
-        height: 62px;
+
+    .brand-logo-text {
+        gap: 8px;
     }
-}
 
-/* KRETEX AI HEADER LOGO */
-.brand-logo {
-    width: 190px;
-    height: 70px;
-    object-fit: contain;
-    display: block;
-}
+    .kr-mark {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
 
-@media (max-width: 600px) {
-    .brand-logo {
-        width: 165px;
-        height: 62px;
+    .brand-name {
+        font-size: 18px;
     }
 }
