@@ -1979,29 +1979,29 @@ button, input, textarea, select {
     text-decoration: none;
 }
 
-.kr-mark {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 42px;
+.kr-logo {
+    width: 52px;
     height: 42px;
+    display: block;
+    overflow: visible;
+}
 
-    border-radius: 12px;
+.kr-shape {
+    fill: none;
+    stroke: url(#krGradient);
+    stroke-width: 5;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    filter: drop-shadow(0 0 7px rgba(0, 220, 255, 0.35));
+}
 
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    letter-spacing: -1px;
-
-    color: #ffffff;
-
-    background:
-        linear-gradient(
-            145deg,
-            #182b58,
-            #111832
-        );
+.kr-cut {
+    fill: none;
+    stroke: #8b5cf6;
+    stroke-width: 5;
+    stroke-linecap: round;
+    filter: drop-shadow(0 0 6px rgba(139, 92, 246, 0.35));
+}
 
     border: 1px solid rgba(0, 220, 255, .30);
 
@@ -2042,13 +2042,6 @@ button, input, textarea, select {
 
     .brand-logo-text {
         gap: 8px;
-    }
-
-    .kr-mark {
-        width: 36px;
-        height: 36px;
-        border-radius: 10px;
-        font-size: 14px;
     }
 
     .brand-name {
