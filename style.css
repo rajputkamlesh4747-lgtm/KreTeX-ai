@@ -2072,27 +2072,3 @@ button, input, textarea, select {
 .kr-logo + * {
     margin-left: 2px;
 }
-
-.brand-logo-kr {
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    font-style: italic;
-    letter-spacing: -6px;
-
-    padding-right: 6px;
-
-    background: linear-gradient(135deg, #16e6ff, #6c5cff, #914cff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-
-    filter: drop-shadow(0 0 10px rgba(22,230,255,.35));
-}
-
-@media (max-width: 600px) {
-    .brand-logo-kr {
-        font-size: 26px;
-        letter-spacing: -5px;
-    }
-}
