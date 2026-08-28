@@ -2331,3 +2331,85 @@ header nav a:hover,
         font-size: 18px;
     }
 }
+
+/* =========================================
+   KRETEX AI — FLOATING CHAT BUTTON
+   ========================================= */
+
+.kretex-chat-button {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(0, 229, 255, .45);
+    border-radius: 50%;
+
+    background: linear-gradient(
+        145deg,
+        #071c35,
+        #17103d
+    );
+
+    color: #00e5ff;
+
+    cursor: pointer;
+    z-index: 99999;
+
+    box-shadow:
+        0 0 20px rgba(0, 229, 255, .18),
+        0 8px 30px rgba(0, 0, 0, .35);
+
+    transition: .3s ease;
+}
+
+.kretex-chat-button:hover {
+    transform: translateY(-4px) scale(1.06);
+
+    border-color: #00e5ff;
+
+    box-shadow:
+        0 0 32px rgba(0, 229, 255, .32),
+        0 12px 35px rgba(0, 0, 0, .4);
+}
+
+.chat-icon {
+    position: relative;
+    z-index: 2;
+
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.chat-glow {
+    position: absolute;
+    inset: 8px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(0, 229, 255, .18),
+        transparent 70%
+    );
+}
+
+@media (max-width: 600px) {
+    .kretex-chat-button {
+        right: 15px;
+        bottom: 15px;
+
+        width: 54px;
+        height: 54px;
+    }
+
+    .chat-icon {
+        font-size: 22px;
+    }
+}
