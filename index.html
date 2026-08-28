@@ -15,70 +15,40 @@
   <div class="nav-container">
      <div class="brand-logo-text">
 <svg class="kr-logo" viewBox="0 0 120 80" aria-label="KR">
-    <defs>
-        <linearGradient id="krJoinedGradient"
-            x1="0%" y1="100%"
-            x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#00e5ff"/>
-            <stop offset="45%" stop-color="#168cff"/>
-            <stop offset="100%" stop-color="#a855f7"/>
-        </linearGradient>
-    </defs>
+  <defs>
+    <linearGradient id="krFinalGradient"
+      x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="45%" stop-color="#168cff"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
 
-    <!-- JOINED K + R MONOGRAM -->
+  <!-- ONE JOINED KR MONOGRAM -->
+  <path
+    d="
+      M12 68
+      V12
+      M12 40
+      L48 12
+      M12 40
+      L45 68
 
-    <!-- Main K/R spine -->
-    <path
-        d="M14 68 V12"
-        fill="none"
-        stroke="url(#krJoinedGradient)"
-        stroke-width="8"
-        stroke-linecap="round"/>
+      M45 68
+      V12
+      H68
+      C87 12 87 40 68 40
+      H45
 
-    <!-- K upper diagonal -->
-    <path
-        d="M14 40 L49 12"
-        fill="none"
-        stroke="url(#krJoinedGradient)"
-        stroke-width="8"
-        stroke-linecap="round"
-        stroke-linejoin="round"/>
-
-    <!-- K lower diagonal flowing into R -->
-    <path
-        d="M14 40 L43 67 L58 52"
-        fill="none"
-        stroke="url(#krJoinedGradient)"
-        stroke-width="8"
-        stroke-linecap="round"
-        stroke-linejoin="round"/>
-
-    <!-- R upper bowl — connected from K -->
-    <path
-        d="M43 67 V12 H68
-           C88 12 88 40 68 40 H43"
-        fill="none"
-        stroke="url(#krJoinedGradient)"
-        stroke-width="8"
-        stroke-linecap="round"
-        stroke-linejoin="round"/>
-
-    <!-- R leg -->
-    <path
-        d="M68 40 L104 68"
-        fill="none"
-        stroke="url(#krJoinedGradient)"
-        stroke-width="8"
-        stroke-linecap="round"/>
-
-    <!-- Small joining accent -->
-    <path
-        d="M43 67 L58 52"
-        fill="none"
-        stroke="#ffffff"
-        stroke-width="2.5"
-        stroke-linecap="round"
-        opacity=".55"/>
+      M68 40
+      L106 68
+    "
+    fill="none"
+    stroke="url(#krFinalGradient)"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
 </svg>
          <span class="brand-name">KreTeX <b>AI</b></span>
      </div>
