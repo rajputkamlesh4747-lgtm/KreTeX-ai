@@ -2069,3 +2069,39 @@ button, input, textarea, select {
     flex-shrink: 0;
     overflow: visible;
 }
+
+/* ===== KreTeX AI Header ===== */
+
+.site-header,
+header {
+    position: relative;
+    z-index: 1000;
+}
+
+.logo,
+.brand,
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.kr-logo {
+    width: 62px;
+    height: 48px;
+    flex-shrink: 0;
+    display: block;
+}
+
+.logo-text,
+.brand-text {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.logo-text span,
+.brand-text span {
+    color: #00d9ff;
+}
