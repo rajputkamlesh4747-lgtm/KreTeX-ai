@@ -15,10 +15,37 @@
   <div class="nav-container">
      <div class="brand-logo-text">
          <svg class="kr-logo" viewBox="0 0 100 70" aria-label="KR">
-    <path class="kr-shape"
-        d="M12 58V10h12v18L45 10h18L39 31l27 27H48L28 38l-4 4v16z"/>
-    <path class="kr-cut"
-        d="M55 39l20 19H59L47 46z"/>
+    <defs>
+        <linearGradient id="krGradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#00e5ff"/>
+            <stop offset="50%" stop-color="#168cff"/>
+            <stop offset="100%" stop-color="#a855f7"/>
+        </linearGradient>
+    </defs>
+
+    <!-- K -->
+    <path
+        d="M12 10 V60
+           M12 36 L43 10
+           M12 36 L43 60"
+        fill="none"
+        stroke="url(#krGradient)"
+        stroke-width="7"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+    <!-- R -->
+    <path
+        d="M43 60 V10
+           H65
+           C82 10 82 35 65 35
+           H43
+           M63 35 L86 60"
+        fill="none"
+        stroke="url(#krGradient)"
+        stroke-width="7"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
          </svg>
          <span class="brand-name">KreTeX <b>AI</b></span>
      </div>
