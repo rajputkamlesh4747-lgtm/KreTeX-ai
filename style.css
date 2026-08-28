@@ -2105,3 +2105,158 @@ header {
 .brand-text span {
     color: #00d9ff;
 }
+
+ /* ===== PREMIUM HERO ===== */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 110px 20px 80px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 7vw, 86px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    font-weight: 800;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+.hero h1 .gradient,
+.hero h1 span {
+    background: linear-gradient(
+        90deg,
+        #00e5ff,
+        #3b82f6,
+        #a855f7
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    max-width: 760px;
+    margin: 25px auto 35px;
+    font-size: 19px;
+    line-height: 1.7;
+    color: #aeb8d0;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons a {
+    min-width: 190px;
+    padding: 17px 28px;
+    border-radius: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.hero-buttons a:hover {
+    transform: translateY(-3px);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .hero {
+        padding: 80px 18px 60px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+        letter-spacing: -1.5px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+    }
+}
+/* =========================================
+   KRETEX AI — HERO AI VISUAL
+   ========================================= */
+
+.hero-visual,
+.hero-image,
+.hero-art {
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    border: 1px solid rgba(0, 220, 255, .14);
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(0, 220, 255, .10),
+            transparent 55%
+        ),
+        rgba(6, 12, 29, .55);
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, .30);
+}
+
+.hero-visual img,
+.hero-image img,
+.hero-art img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .6s ease;
+}
+
+.hero-visual:hover img,
+.hero-image:hover img,
+.hero-art:hover img {
+    transform: scale(1.025);
+}
+
+
+/* subtle futuristic glow */
+
+.hero-visual::before,
+.hero-image::before,
+.hero-art::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 229, 255, .07),
+            transparent 35%,
+            rgba(168, 85, 247, .07)
+        );
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .hero-visual,
+    .hero-image,
+    .hero-art {
+        border-radius: 20px;
+    }
+}
