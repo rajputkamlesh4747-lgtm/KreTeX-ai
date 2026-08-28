@@ -2060,15 +2060,4 @@ button, input, textarea, select {
 
 .kr-logo + * {
     margin-left: 2px;
-   }/* Premium KR Header Logo */
-.kr-logo {
-    width: 58px;
-    height: 46px;
-    flex-shrink: 0;
-    display: block;
-    overflow: visible;
-}
-
-.kr-logo + * {
-    margin-left: 2px;
 }
