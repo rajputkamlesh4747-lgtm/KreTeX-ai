@@ -2061,3 +2061,11 @@ button, input, textarea, select {
 .kr-logo + * {
     margin-left: 2px;
 }
+
+.kr-logo {
+    width: 62px;
+    height: 48px;
+    display: block;
+    flex-shrink: 0;
+    overflow: visible;
+}
