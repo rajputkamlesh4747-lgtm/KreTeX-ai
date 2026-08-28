@@ -2413,3 +2413,81 @@ header nav a:hover,
         font-size: 22px;
     }
 }
+
+/* KreTeX AI Chat Panel */
+
+.kretex-chat-panel {
+  position: fixed;
+  right: 22px;
+  bottom: 90px;
+  width: min(390px, calc(100vw - 30px));
+  height: min(650px, calc(100vh - 120px));
+  background: #080b20;
+  border: 1px solid rgba(45, 210, 255, 0.45);
+  border-radius: 22px;
+  overflow: hidden;
+  z-index: 99999;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px) scale(0.97);
+  transition: 0.25s ease;
+}
+
+.kretex-chat-panel.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.kretex-chat-header {
+  height: 64px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0b0f27;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.kretex-chat-header strong {
+  display: block;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.kretex-chat-header span {
+  display: block;
+  color: #28dfff;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+#closeKretexChat {
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.kretex-chat-panel iframe {
+  width: 100%;
+  height: calc(100% - 64px);
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .kretex-chat-panel {
+    right: 10px;
+    bottom: 80px;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 100px);
+    border-radius: 18px;
+  }
+}
