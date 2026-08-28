@@ -449,5 +449,34 @@
     <span class="chat-icon">🌐✦</span>
 </button>
 
+<script>
+document.getElementById("kretexChatButton").addEventListener("click", function () {
+
+    /* Existing chatbot ko open karne ki koshish */
+    
+    const chatSelectors = [
+        "#chatbot",
+        "#chat-window",
+        ".chatbot",
+        ".chat-window",
+        "[data-chatbot]",
+        "[class*='chatbot']",
+        "[id*='chat']"
+    ];
+
+    for (const selector of chatSelectors) {
+        const chat = document.querySelector(selector);
+
+        if (chat) {
+            chat.style.display = "block";
+            chat.style.visibility = "visible";
+            chat.style.opacity = "1";
+            return;
+        }
+    }
+
+    console.log("Existing chatbot element not found.");
+});
+                                                             </script>
 </body>
 </html>
